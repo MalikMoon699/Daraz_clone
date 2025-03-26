@@ -7,17 +7,19 @@ import ProductDetails from "../pages/assestsPages/detailsPages/ProductDetails";
 import Cart from "../pages/assestsPages/Cart";
 import SellProduct from "../pages/assestsPages/sellProduct/SellProduct";
 import FooterNav from "../navbarFooter/footerNav";
+import Account from "../pages/assestsPages/Accounts/Accounts";
 
 const Main = () => {
   return (
     <div style={{ backgroundColor: "#f5f5f5" }}>
       <Navbar />
-        <Routes>
-          <Route path="/" element={<Pages />} />
-          <Route path="/cart" element={<Cart />} />
-          <Route path="/sellProduct" element={<SellProduct />} />
-          <Route path="/product/:id" element={<ProductDetails />} />
-        </Routes>
+      <Routes>
+        <Route path="/" element={<Pages />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/sellProduct" element={<SellProduct />} />
+        <Route path="/Account" element={<Account />} />
+        <Route path="/product/:id" element={<ProductDetails />} />
+      </Routes>
       <Footer />
       {/* <FooterNav /> */}
     </div>

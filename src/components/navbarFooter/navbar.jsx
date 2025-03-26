@@ -43,9 +43,7 @@ const Navbar = () => {
 
   return (
     <>
-    <div>
-      
-    </div>
+      <div></div>
       <Modal open={appLink} onClose={() => setAppLink(false)}>
         <div
           onClick={handleAppLinkClose}
@@ -89,10 +87,10 @@ const Navbar = () => {
         >
           <ul className="flex navUl">
             <li onClick={handleAppLinkOpen}>Save More on App</li>
-            <li onClick={()=>navigate("/sellProduct")}>Sell On Daraz</li>
+            <li onClick={() => navigate("/sellProduct")}>Sell On Daraz</li>
             <li onClick={handleServicesOpen}>Help & Support</li>
-            <li>Login</li>
-            <li>Sign Up</li>
+            <li onClick={() => navigate("/Account")}>Login</li>
+            <li onClick={() => navigate("/Account")}>Sign Up</li>
           </ul>
         </div>
         <div className="flex navBox">
