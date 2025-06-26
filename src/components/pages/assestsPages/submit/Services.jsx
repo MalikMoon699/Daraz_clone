@@ -112,7 +112,7 @@ const Services = ({ handleClose }) => {
               <button
                 className="btn-2 cart-btn"
                 type="submit"
-                disabled={!isFormValid} 
+                disabled={!isFormValid}
                 style={{
                   opacity: isFormValid ? "1" : "0.5",
                   cursor: isFormValid ? "pointer" : "not-allowed",
